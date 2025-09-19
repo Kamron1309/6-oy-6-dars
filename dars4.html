@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-neutral-900 text-white">
+
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-4 py-2 bg-neutral-800 sticky top-0 z-50">
+        <!-- Left -->
+        <div class="flex items-center gap-3">
+            <button class="p-2 hover:bg-neutral-700 rounded-lg">
+                <!-- Menu Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 24 24">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+            </button>
+            <!-- YouTube Logo -->
+            <div class="flex items-center">
+                <i class="fab fa-youtube text-red-600 text-2xl mr-1"></i>
+                <span class="font-bold text-xl">YouTube</span>
+            </div>
+        </div>
+
+        <!-- Middle -->
+        <div class="flex items-center gap-2 flex-1 max-w-2xl mx-4">
+            <div class="flex items-center bg-neutral-700 rounded-full px-3 py-1 flex-1">
+                <input type="text" placeholder="Search" class="bg-transparent outline-none flex-1 text-sm">
+                <button class="ml-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white" viewBox="0 0 24 24">
+                        <path d="M10 2a8 8 0 106.32 12.906l4.387 4.387 1.414-1.414-4.387-4.387A8 8 0 0010 2z" />
+                    </svg>
+                </button>
+            </div>
+            <button class="p-2 hover:bg-neutral-700 rounded-full">
+                <!-- Mic Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 24 24">
+                    <path
+                        d="M12 14c1.66 0 3-1.34 3-3V5a3 3 0 10-6 0v6c0 1.66 1.34 3 3 3zM19 11v1c0 3.31-2.69 6-6 6s-6-2.69-6-6v-1H5v1c0 4.08 3.05 7.44 7 7.93V22h2v-2.07c3.95-.49 7-3.85 7-7.93v-1h-2z" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Right -->
+        <div class="flex items-center gap-3">
+            <button class="p-2 hover:bg-neutral-700 rounded-full">
+                <!-- Video Upload -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 24 24">
+                    <path
+                        d="M17 10.5V7c0-1.1-.9-2-2-2H5C3.9 5 3 5.9 3 7v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-3.5l4 4v-11l-4 4z" />
+                </svg>
+            </button>
+            <button class="p-2 hover:bg-neutral-700 rounded-full">
+                <!-- Bell -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 24 24">
+                    <path
+                        d="M12 22c1.1 0 2-.9 2-2H10c0 1.1.9 2 2 2zM18 16v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.68-1.5-1.5-1.5S10.5 3.17 10.5 4v.68C7.63 5.36 6 7.92 6 11v5l-1.7 1.7c-.14.14-.3.33-.3.55V19h16v-.75c0-.22-.16-.41-.3-.55L18 16z" />
+                </svg>
+            </button>
+            <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-semibold">M
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-60 bg-neutral-800 min-h-screen px-3 py-4 space-y-2 hidden md:block">
+            <nav class="space-y-1">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg bg-neutral-700"><i
+                        class="fas fa-home w-5 text-center"></i> Home</a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700"><i
+                        class="fas fa-fire w-5 text-center"></i> Explore</a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700"><i
+                        class="fas fa-play-circle w-5 text-center"></i> Subscriptions</a><br><br>
+                        <a href="./vazifa3.html">birinchi pechga qaytish</a>
+                <hr class="border-neutral-700">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700"><i
+                        class="fas fa-book w-5 text-center"></i> Library</a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700"><i
+                        class="fas fa-history w-5 text-center"></i> History</a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700"><i
+                        class="fas fa-clock w-5 text-center"></i> Watch Later</a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700"><i
+                        class="fas fa-thumbs-up w-5 text-center"></i> Liked Videos</a>
+            </nav>
+
+            <div class="pt-4 border-t border-neutral-700">
+                <h3 class="px-3 py-2 font-semibold">SUBSCRIPTIONS</h3>
+                <div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700">
+                    <div class="w-6 h-6 rounded-full bg-red-500"></div>
+                    <span>Marcus Lenin</span>
+                </div>
+                <div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700">
+                    <div class="w-6 h-6 rounded-full bg-blue-500"></div>
+                    <span>James Gossee</span>
+                </div>
+                <div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-neutral-700">
+                    <div class="w-6 h-6 rounded-full bg-green-500"></div>
+                    <span>Alexis Sears</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-4">
+            <!-- Filter Chips -->
+            <div class="flex gap-2 overflow-x-auto pb-3 mb-4">
+                <button class="px-4 py-1 bg-white text-black rounded-full text-sm whitespace-nowrap">All</button>
+                <button class="px-4 py-1 bg-neutral-700 rounded-full text-sm whitespace-nowrap">Music</button>
+                <button class="px-4 py-1 bg-neutral-700 rounded-full text-sm whitespace-nowrap">Gaming</button>
+                <button class="px-4 py-1 bg-neutral-700 rounded-full text-sm whitespace-nowrap">News</button>
+                <button class="px-4 py-1 bg-neutral-700 rounded-full text-sm whitespace-nowrap">Sports</button>
+                <button class="px-4 py-1 bg-neutral-700 rounded-full text-sm whitespace-nowrap">Movies</button>
+                <button class="px-4 py-1 bg-neutral-700 rounded-full text-sm whitespace-nowrap">Technology</button>
+                <button class="px-4 py-1 bg-neutral-700 rounded-full text-sm whitespace-nowrap">Fashion</button>
+                <button class="px-4 py-1 bg-neutral-700 rounded-full text-sm whitespace-nowrap">Learning</button>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Video Card 1 -->
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-blue-700 to-blue-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">23:45</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-red-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">James Gossee • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-red-700 to-red-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">19:10</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-blue-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Marcus Lenin • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-green-700 to-green-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">15:30</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-green-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Alexis Sears • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 4 -->
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-purple-700 to-purple-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">28:17</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-purple-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Alexis Lambert • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-purple-700 to-purple-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">28:17</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-purple-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Alexis Lambert • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Card 5 -->
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-yellow-700 to-yellow-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">22:45</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-yellow-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Anne White • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-yellow-700 to-yellow-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">22:45</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-yellow-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Anne White • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Card 6 -->
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-pink-700 to-pink-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">17:30</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-pink-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Skyler Dess • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-pink-700 to-pink-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">17:30</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-pink-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Skyler Dess • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Card 7 -->
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-indigo-700 to-indigo-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">25:15</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-indigo-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Alan Cooper • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-indigo-700 to-indigo-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">25:15</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-indigo-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Ep & Living to Serve | SEARCH ON</h3>
+                            <p class="text-xs text-gray-400">Alan Cooper • 1M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Card 8 -->
+                <div class="space-y-2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-teal-700 to-teal-900 h-40 rounded-lg"></div>
+                        <span class="absolute bottom-2 right-2 bg-black text-xs px-2 py-0.5 rounded">20:22</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-9 h-9 rounded-full bg-teal-500"></div>
+                        <div>
+                            <h3 class="text-sm font-medium">Blind Woodturner: Turning passion into fine art</h3>
+                            <p class="text-xs text-gray-400">James Gossee • 576K views • 2 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Add interactivity to the sidebar menu
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.querySelector('header button');
+            const sidebar = document.querySelector('aside');
+
+            menuButton.addEventListener('click', function () {
+                sidebar.classList.toggle('hidden');
+                sidebar.classList.toggle('md:block');
+            });
+        });
+    </script>
+</body>
+
+</html>
